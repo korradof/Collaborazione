@@ -1,0 +1,12 @@
+<h1>Risorse</h1>
+
+<ul *ngIf="employees">
+  <a  href="#" routerLink="/">
+    <li *ngFor="let employee of employees">
+    <p class="IDEmployee">{{ employee.IDEmployee }}</p>
+    <p class="FirstName">{{ employee.FirstName }}</p>
+    <p class="LastName">{{ employee.LastName }}</p>
+    <!--<a class="LastName" href="{{ brew.website_url }}">site</a>-->
+  </li>
+  </a>
+</ul>

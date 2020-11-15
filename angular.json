@@ -28,6 +28,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -70,7 +71,8 @@
           },
           "configurations": {
             "production": {
-              "browserTarget": "myapp:build:production"
+              "browserTarget": "myapp:build:production",
+              "proxyConfig": "src/proxy.conf.json"
             }
           }
         },
@@ -92,6 +94,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -123,6 +126,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "myapp"
+    }
+  },
+  "defaultProject": "myapp",
+  "cli": {
+    "analytics": "524510a5-0e7b-413a-ac0c-2f9b0f65482f"
+  }
 }
